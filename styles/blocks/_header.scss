@@ -1,0 +1,22 @@
+.header
+{
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu{
+    display: flex;
+    align-items: center;
+
+    &-list{
+      display: flex;
+      gap: 30px;
+    }
+    &-link{
+      text-transform: uppercase;
+      font-weight: 600;
+      @include fluid-text(14, 12);
+    }
+  }
+}

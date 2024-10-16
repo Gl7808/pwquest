@@ -1,0 +1,35 @@
+.location{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__title{
+    background-color: var(--background-color-block);
+    padding: 5px;
+    border-radius: var(--border-radius-medium);
+  }
+  &__list{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-level{
+      font-size: 14px;
+      color: var(--color-sucsess);
+    }
+
+    &-item{
+      padding: 5px;
+      border-radius: var(--border-radius-medium);
+      background-color: var(--color-accent);
+    }
+    &-title{
+      flex-wrap: nowrap;
+    }
+    &-description{
+      font-size: 14px;
+    }
+    &-counter{
+      font-weight: 700;
+    }
+  }
+}
