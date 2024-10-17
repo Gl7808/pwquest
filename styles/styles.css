@@ -374,6 +374,10 @@ svg * {
   font-weight: bold;
 }
 
+.sub-description {
+  font-size: 10px;
+}
+
 .difficult {
   position: absolute;
   content: "";
