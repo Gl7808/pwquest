@@ -2,6 +2,7 @@
 let total = document.getElementById('total');
 let current = document.getElementById('current');
 let amount = document.getElementsByClassName('myCheckBox')
+let counter = 0;
 
 
 document.addEventListener('click', function(event) {
@@ -41,6 +42,8 @@ function loadCheckboxState() {
     checkboxes.forEach(checkbox => {
         const checked = localStorage.getItem(checkbox.id) === 'true';
         checkbox.checked = checked;
+       let g = localStorage.getItem(checkbox.id) === 'true' ? counter +=1 : counter;
+        current.innerText = g;
     });
 }
 
@@ -53,9 +56,11 @@ checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', saveCheckboxState);
 });
 
-
 let change = () => {
     total.innerText = amount.length;
 }
 
 change();
+
+
+console.log(counter)
