@@ -1,0 +1,27 @@
+.npc{
+  color: var(--color-heisenberg-600);
+  font-weight: bold;
+}
+
+.enemy{
+  color: #9f105c;
+  font-weight: bold;
+}
+
+.difficult{
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  left: -30px;
+}
+
+.easy{
+  background-color: var(--color-green);
+}
+.medium{
+  background-color: var(--color-yellow);
+}
+.hard{
+  background-color: var(--color-red);
+}

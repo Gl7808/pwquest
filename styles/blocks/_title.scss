@@ -1,0 +1,46 @@
+.title{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark-600);
+  border-radius: var(--border-radius-medium);
+  padding: 10px;
+  margin-top: 50px;
+  gap: 10px;
+
+  &__header{
+
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+
+    &-item{
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 220px 100px 5fr 30px;
+      width: 100%;
+
+      &-cord{
+        cursor: pointer;
+        font-weight: 700;
+        color: var(--color-yellow)
+      }
+      &-name, &-get, &-description, &-checkbox{
+        position: relative;
+        border:var(--border);
+        border-radius: var(--border-radius-medium);
+        padding: 5px;
+        background-color: var(--color-dark-800);
+        align-items: center;
+        display: flex;
+        white-space: nowrap;
+      }
+
+      &-checkbox{
+        justify-content: center;
+      }
+    }
+  }
+}

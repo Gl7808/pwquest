@@ -9,235 +9,575 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<header class="header">
-    <div class="header__inner container">
-        <a href="#" class="header__logo logo">
-            <img src="./images/logo.png" height="56" width="56" alt="" class="logo__image">
-        </a>
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">
-                    <a href="./index.html" class="header__menu-link">RoadMap</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="./items.html" class="header__menu-link">Items</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Titles</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Other</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<section class="container">
-    <div class="leveling">
-        <div class="leveling__title">
-            <h4>Уровень 1</h4>
-            <p class="leveling__title-description">Закупка/Приготовления</p>
+    <header class="header">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img src="./images/logo.png" height="56" width="56" alt="" class="header__logo-image">
+            </div>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">tables</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">items</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">other</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="leveling__description">
-            <div class="leveling__description-item">
-                <span class="leveling__description-icon">
-                    <img src="./images/buy.png" height="32" width="32" alt="">
-                </span>
-                <span class="item__counter">
-                    <img src="./images/items/stone_of_knowledge.jpg" height="32" width="32" alt=""
-                         class="leveling__description-img">
-                    <span class="item__counter-number">5</span>
-                </span>
-                <img src="./images/items/rune_of_teleportation.jpg" height="32" width="32" alt=""
-                     class="leveling__description-img">
-                <span class="item__counter">
-                    <img src="./images/items/secret_book.jpg" height="32" width="32" alt=""
-                         class="leveling__description-img">
-                    <span class="item__counter-number">3</span>
-                </span>
-                <span class="item__counter">
-                    <img src="./images/items/z9b.jpg" height="32" width="32" alt="" class="leveling__description-img">
-                    <span class="item__counter-number">10</span>
-                </span>
-                <span class="item__counter">
-                    <img src="./images/items/inventory.jpg" height="32" width="32" alt=""
-                         class="leveling__description-img">
-                    <span class="item__counter-number">4</span>
-                </span>
-                <img src="./images/items/atlas.jpg" height="32" width="32" alt="" class="leveling__description-img">
-                <img src="./images/items/red_horse.jpg" height="32" width="32" alt="" class="leveling__description-img">
-                <span class="leveling__description-span"> Покупаем и активируем <span
-                        class="npc">58 Золотых</span></span>
+    </header>
+    <main class="main">
+        <section class="section container">
+            <div class="title">
+                <div class="title__header">
+                    <h4>Цепочка 1: Замерзжие земли</h4>
+                </div>
+                <ul class="title__list">
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Знаток сплетен
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">553 654</span>
+                            <span class="title__list-item-height">(26)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Необходимо поговорить с NPC:
+                            <span class="npc"> &nbsp; Вэй Сяобао</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox1"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Зоркий глаз
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">519 692</span>
+                            <span class="title__list-item-height">(22.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Необходимо поговорить с NPC:
+                            <span class="npc"> &nbsp; Наставник шаманов</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox2"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Браконьер
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">108 1003</span>
+                            <span class="title__list-item-height">(23)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить
+                            <span class="enemy"> &nbsp; х20 Призрак ночи, х20 Иссохший, х10 Колесница ада</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox3"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Искатель
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord" >142 974</span>
+                            <span class="title__list-item-height">(23)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Достигнуть точки &nbsp;
+                            <span class="title__list-item-cord" >177 953</span>&nbsp;
+                            <span class="title__list-item-height">(23)</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                                <input type="checkbox" class="myCheckBox" id="checkbox4"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Охотник за приведениями
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord" >148 962</span>
+                            <span class="title__list-item-height">(22)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить &nbsp;
+                            <span class="enemy">Перстрый призрак х50</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                                <input type="checkbox" class="myCheckBox" id="checkbox5"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            В поисках города Инея
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord" >120 971</span>
+                            <span class="title__list-item-height">(25.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Зайти в Город Инея &nbsp;
+                            <span class="title__list-item-cord">430 530</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                                <input type="checkbox" class="myCheckBox" id="checkbox6"/>
+                        </span>
+                    </li>
+                </ul>
             </div>
-            <div class="leveling__description-item">
-                <span class="leveling__description-span">Качаемся до 9-го уровня</span>
+            <div class="title">
+                <div class="title__header">
+                    <h4>Цепочка 2: Ледяная река</h4>
+                </div>
+                <ul class="title__list">
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Диверсант
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">201 976</span>
+                            <span class="title__list-item-height">(17.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить :
+                            <span class="enemy">&nbsp; х50 Тень ледяной реки &nbsp;</span>
+                            Засчитываются, только мобы с синими вихрями
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox7"/>
+                        </span>
+                    </li>
+                </ul>
             </div>
-            <div class="leveling">
-                <div class="leveling__title">
-                    <h4>Уровень 9</h4>
-                    <p class="leveling__title-description">Уважение/Приготовления</p>
+            <div class="title">
+                <div class="title__header">
+                    <h4>Цепочка 3: Ущелье лавин</h4>
                 </div>
-                <div class="leveling__description-item">
-                <span class="leveling__description-icon">
-                    <img src="./images/important.png" height="32" width="32" alt="">
-                </span>
-                    <img src="./images/items/weapon.jpg" height="32" width="32" alt=""
-                         class="leveling__description-img">
-                    <img src="./images/items/djin.png" height="32" width="32" alt="" class="leveling__description-img">
-                    <span class="leveling__description-span">Прокликиваем пуху и джина</span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Делаем уважение</span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Качаемся до 20-го уровня</span>
-                </div>
+                <ul class="title__list">
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Палеонтолог
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">325 975</span>
+                            <span class="title__list-item-height">(25)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить :
+                            <span class="enemy">&nbsp; х25 Ледяной Великан &nbsp;</span>
+                            Шанс 50%
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox8"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Мастер убийств
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">316 948</span>
+                            <span class="title__list-item-height">(22.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить :
+                            <span class="enemy">&nbsp; Треножник - великан (101) &nbsp;</span>
+                            Появляется после копки
+                            <span class="npc">&nbsp; Костяной камень</span>, тут же под навесом. респ.шахты - 10 минут
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox9"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Археолог
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">361 981</span>
+                            <span class="title__list-item-height">(25)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Вскопать : &nbsp;
+                            <span class="title__list-item-cord">365 981</span> &nbsp;|&nbsp;
+                            <span class="title__list-item-cord">327 978</span> &nbsp;|&nbsp;
+                            <span class="title__list-item-cord">324 970</span> &nbsp;|&nbsp;
+                            <span class="title__list-item-cord">352 932</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox10"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Мясник
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">313 945</span>
+                            <span class="title__list-item-height">(25)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить :
+                            <span class="enemy">&nbsp;Треножник - ледяной зверь(101) &nbsp;</span>
+                            Вскопать, тут же внутри шатра, респ 10 мин.
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox11"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Чистильщик
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">305 912</span>
+                            <span class="title__list-item-height">(20)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить :
+                            <span class="enemy">&nbsp;х25 Герой замерзшей реки(95) &nbsp;</span>
+                            Шанс 50%
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox12"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Мастер трех ударов
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">317 945</span>
+                            <span class="title__list-item-height">(20)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить :
+                            <span class="enemy">&nbsp;Треножник - храбрец (101)&nbsp;</span>
+                            копается рядом внутри костей, респ 10 минут.
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox13"/>
+                        </span>
+                    </li>
+                </ul>
             </div>
-            <div class="leveling">
-                <div class="leveling__title">
-                    <h4>Уровень 20</h4>
-                    <p class="leveling__title-description">Уважение/Прокачка</p>
+            <div class="title">
+                <div class="title__header">
+                    <h4>Цепочка 4: Огненная гора</h4>
                 </div>
-                <div class="leveling__description-item">
-                <span class="leveling__description-icon">
-                    <img src="./images/important.png" height="32" width="32" alt="">
-                </span>
-                    <img src="./images/items/weapon.jpg" height="32" width="32" alt=""
-                         class="leveling__description-img">
-                    <img src="./images/items/wing.jpg" height="32" width="32" alt="" class="leveling__description-img">
-                    <img src="./images/items/jewelery_19.jpg" height="32" width="32" alt=""
-                         class="leveling__description-img">
-                    <span class="leveling__description-span">Телепорт в тайную деревню : Оружие + Полет + Бижутерия</span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Делаем уважение</span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Качаемся до 27-го уровня</span>
-                </div>
-            </div>
-            <div class="leveling">
-                <div class="leveling__title">
-                    <h4>Уровень 27</h4>
-                    <p class="leveling__title-description">Уважение/Приготовления</p>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Делаем уважени 20+</span>
-                </div>
-            </div>
-            <div class="leveling">
-                <div class="leveling__title">
-                    <h4>Уровень 30</h4>
-                    <p class="leveling__title-description">Уважение/Приготовления</p>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">в 19.00 делаем <span class="npc">Чон-Понов 20+ и 30+</span></span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Берем Безумный Камень</span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-icon">
-                        <img src="./images/important.png" height="32" width="32" alt="">
-                     </span>
-                    <span class="leveling__description-span">Прокачиваем Слово Истины | Покупаем шмот | Прокачиваем скилы</span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-icon">
-                        <img src="./images/exp.png" height="32" width="32" alt="">
-                     </span>
-                    <span class="leveling__description-span">Идем в Ущелье Феникса до 39~40 уровня</span>
-                </div>
-            </div>
-            <div class="leveling">
-                <div class="leveling__title">
-                    <h4>Уровень 39</h4>
-                    <p class="leveling__title-description">Уважение/Приготовления</p>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Делаем 30+ Уважение</span>
-                    <span class="leveling__description-span">Прокачиваемся до 40-го уровня</span>
-                </div>
-            </div>
-            <div class="leveling">
-                <div class="leveling__title">
-                    <h4>Уровень 40+</h4>
-                    <p class="leveling__title-description">Гошики</p>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-icon">
-                        <img src="./images/important.png" height="32" width="32" alt="">
-                     </span>
-                    <span class="leveling__description-span">Берем 40 полет из коробки</span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Берем <span class="quest">Безумный камень 40+</span></span>
-                    <span class="leveling__description-span">Берем <span
-                            class="quest">Охотник за головами 40+</span></span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Начинаем делать <span class="quest">Гошики</span></span>
-                </div>
-            </div>
-            <div class="leveling">
-                <div class="leveling__title">
-                    <h4>Уровень 45+</h4>
-                    <p class="leveling__title-description">Задания</p>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Зачищаем <span class="npc">Племя ветров</span></span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Зачищаем <span class="npc">Лагерь водопада</span></span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Сдаем <span class="quest">100 квестов</span></span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Добиваем 50-й уровень</span>
-                </div>
-            </div>
-            <div class="leveling">
-                <div class="leveling__title">
-                    <h4>Уровень 50+</h4>
-                    <p class="leveling__title-description">Ущелье феникса + кв</p>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-icon">
-                        <img src="./images/important.png" height="32" width="32" alt="">
-                     </span>
-                    <img src="./images/items/weapon.jpg" height="32" width="32" alt=""
-                         class="leveling__description-img">
-                    <span class="leveling__description-span">
-                        Берем Доспехи + Оружие. Все камни в сикера
-                    </span>
-                    <span class="leveling__description-span">
-                        Перезаходим и получаем реф.бонус
-                    </span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-icon">
-                        <img src="./images/exp.png" height="32" width="32" alt="">
-                     </span>
-                    <span class="leveling__description-span">Идем в ущелье феникса 45+</span>
-                    <span class="leveling__description-span">Обмениваем 2 бронзовые монеты у <span
-                            class="npc">Ван Цань</span></span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-span">Добиваем 55~56 уровень</span>
-                </div>
-                <div class="leveling__description-item">
-                    <span class="leveling__description-icon">
-                        <img src="./images/important.png" height="32" width="32" alt="">
-                     </span>
-                    <span class="leveling__description-span">Начинаем ебейше делать квесты</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="footer container">
+                <ul class="title__list">
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult hard"></span>
+                            Охотник
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">400 993</span>
+                            <span class="title__list-item-height">(25)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить :
+                            <span class="enemy">&nbsp; х20  Вожак снежных волков (20)&nbsp;</span> <br/>
+                            <span class="enemy">&nbsp; х20  Гигантский боевой муравей (20)&nbsp;</span> <br/>
+                            <span class="enemy">&nbsp; х10  Любвеобильный горный призрак (23)&nbsp;</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox14"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Гладиатор
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">441 998</span>
+                            <span class="title__list-item-height">(25)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Вскопать + Убить : &nbsp;
+                            <span class="title__list-item-cord">400 1003</span> &nbsp; | &nbsp;
+                            <span class="title__list-item-cord">434 1006</span> &nbsp; | &nbsp;
+                            <span class="title__list-item-cord">441 1001</span> &nbsp;
+                            Респ шахт 10 минут
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox15"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Тяжелая рука
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">404 954</span>
+                            <span class="title__list-item-height">(25)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Вскопать + Убить : &nbsp;
+                            <span class="title__list-item-cord">404 955</span> &nbsp; | &nbsp;
+                            Респ шахт 10 минут, заходим в данж(19) и сразу выходим
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox16"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Единоборец
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">450 914</span>
+                            <span class="title__list-item-height">(30)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить : &nbsp;
+                            <span class="enemy">Прохвост (34)</span> &nbsp; | &nbsp;
+                            <span class="title__list-item-cord">446 914</span>(36)
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox17"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Дезинсектор
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">383 563</span>
+                            <span class="title__list-item-height">(30)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить : &nbsp;
+                            <span class="enemy">Кун Ли (23)</span> &nbsp; | &nbsp;
+                            Квест берется внутри данжа в начале тоннеля между двумя големами.
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox18"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult easy"></span>
+                            Звезда Огненной горы
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">445 970</span>
+                            <span class="title__list-item-height">(65)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Вскопать : &nbsp;
+                            <span class="title__list-item-cord">444 970</span>(61) &nbsp;
 
-</footer>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox19"/>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="title">
+                <div class="title__header">
+                    <h4>Цепочка 5: Берег Великого предела</h4>
+                </div>
+                <ul class="title__list">
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Первооткрыватель
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">541 958</span>
+                            <span class="title__list-item-height">(20)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Достигнуть точки : &nbsp;
+                            <span class="title__list-item-cord">531 967</span>(38.5)
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox20"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Призрак башни
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">531 967</span>
+                            <span class="title__list-item-height">(38.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Достигнуть точки : &nbsp;
+                            <span class="title__list-item-cord">444 970</span>(61.5)
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox21"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Боец
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">562 978</span>
+                            <span class="title__list-item-height">(22.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить : &nbsp;
+                            <span class="enemy">x50 Дух скорби-воин (55)</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox22"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Призрак пагоды
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">569 929</span>
+                            <span class="title__list-item-height">(40.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Достигнуть точки : &nbsp;
+                            <span class="title__list-item-cord">581 984</span>(21.5)
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox23"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Мастер клинка
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">525 928</span>
+                            <span class="title__list-item-height">(26)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Выкопать меч, один из 9-ти возможных. У каждого свой. Наводить точно на маленькие синие огоньки возле мечей и искать где копается.
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox24"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Убийца монстров
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">577 987</span>
+                            <span class="title__list-item-height">(22.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить : &nbsp;
+                            <span class="enemy">Царь Кобр (70)</span> &nbsp; <span class="title__list-item-cord">583 986</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox25"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Звезда Великого предела
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">578 986</span>
+                            <span class="title__list-item-height">(22.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Вскопать + Убить : &nbsp;
+                            <span class="title__list-item-cord">576 988</span> &nbsp; | &nbsp;
+                            <span class="title__list-item-cord">581 983</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox26"/>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="title">
+                <div class="title__header">
+                    <h4>Цепочка 6: Роковой город</h4>
+                </div>
+                <ul class="title__list">
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Лесник
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">673 975</span>
+                            <span class="title__list-item-height">(33.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Сдать квест : &nbsp;
+                            <span class="npc">Лиственный дух</span> &nbsp;
+                            (<span class="title__list-item-cord">674 975</span>)
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox27"/>
+                        </span>
+                    </li>
+                    <li class="title__list-item">
+                        <span class="title__list-item-name">
+                            <span class="difficult medium"></span>
+                            Палач
+                        </span>
+                        <span class="title__list-item-get">
+                            <span class="title__list-item-cord">661 968</span>
+                            <span class="title__list-item-height">(20.5)</span>
+                        </span>
+                        <span class="title__list-item-description">
+                            Убить : &nbsp;
+                            <span class="enemy">20 - Царь неистовых кровавых акул (52)</span> &nbsp; | &nbsp;
+                            <span class="enemy">20 - Царица кровавых акул (53)</span> &nbsp; | &nbsp;
+                            <span class="enemy">10 - Царь сколопендр-трупоедов (51)</span>
+                        </span>
+                        <span class="title__list-item-checkbox">
+                            <input type="checkbox" class="myCheckBox" id="checkbox28"/>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script/main.js"></script>
 </body>
 </html>
