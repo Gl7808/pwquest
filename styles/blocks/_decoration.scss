@@ -29,3 +29,14 @@
 .hard{
   background-color: var(--color-red);
 }
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #6fffad;
+  width: 20px;
+  height: 20px;
+}
+
+.gold{
+  font-size: 10px;
+  color: var(--color-yellow);
+}
