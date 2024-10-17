@@ -1,3 +1,9 @@
+
+let total = document.getElementById('total');
+let current = document.getElementById('current');
+let amount = document.getElementsByClassName('myCheckBox')
+
+
 document.addEventListener('click', function(event) {
     // Проверяем, кликнули ли мы по элементу с классом 'copyDiv'
     if (event.target.classList.contains('title__list-item-cord')) {
@@ -46,3 +52,10 @@ const checkboxes = document.querySelectorAll('.myCheckBox');
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', saveCheckboxState);
 });
+
+
+let change = () => {
+    total.innerText = amount.length;
+}
+
+change();

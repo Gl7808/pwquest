@@ -1,9 +1,22 @@
 .header{
   height: 80px;
+  margin-top: 20px;
   &__inner{
     display: flex;
     justify-content: space-between;
     color: var(--color-light-300)
+  }
+  &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light-100);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow:
+            1px 1px 1px var(--color-heisenberg-500),
+            3px 3px 10px var(--color-heisenberg-600);
+
   }
   &__menu{
 

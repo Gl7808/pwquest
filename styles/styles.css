@@ -303,11 +303,21 @@ svg * {
 }
 .header {
   height: 80px;
+  margin-top: 20px;
 }
 .header__inner {
   display: flex;
   justify-content: space-between;
   color: var(--color-light-300);
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light-100);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px var(--color-heisenberg-500), 3px 3px 10px var(--color-heisenberg-600);
 }
 .header__menu-list {
   display: flex;
@@ -342,7 +352,7 @@ svg * {
 .title__list-item {
   display: grid;
   gap: 10px;
-  grid-template-columns: 220px 100px 5fr 30px;
+  grid-template-columns: 220px 110px 5fr 30px;
   width: 100%;
 }
 .title__list-item-cord {
@@ -396,6 +406,20 @@ svg * {
 
 .hard {
   background-color: var(--color-red);
+}
+
+.stat {
+  position: fixed;
+  left: 50px;
+  padding: 5px;
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-dark-700);
+  font-size: 14px;
+}
+.stat__progress {
+  display: flex;
+  justify-content: start;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
