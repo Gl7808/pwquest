@@ -25,7 +25,7 @@
   --border: 1px solid var(--color-dark-500);
   --border-radius-medium: 4px;
   --font-family-base: "Montserrat", sans-serif;
-  --container-widht: 1540px;
+  --container-widht: 1500px;
   --container-padding-x: 20px;
   --section-padding-y: 70px;
   --block-padding: 25px;
@@ -436,7 +436,7 @@ input[type=radio] {
 
 .items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .items__block {
