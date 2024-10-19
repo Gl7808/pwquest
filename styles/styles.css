@@ -443,7 +443,7 @@ input[type=radio] {
 .stat {
   position: fixed;
   left: 35px;
-  padding: 5px;
+  padding: 10px;
   border-radius: var(--border-radius-medium);
   background-color: var(--color-dark-700);
   font-size: 14px;
@@ -452,8 +452,9 @@ input[type=radio] {
   display: flex;
   justify-content: start;
   gap: 5px;
+  font-weight: 600;
+  color: #ffdd98;
 }
-
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

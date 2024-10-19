@@ -6,6 +6,7 @@ let counter = 0;
 let message = document.getElementById('message')
 let message__succsess = document.getElementById('message__succsess')
 let message__value = document.getElementById('message__value')
+let stat__progress = document.getElementById('stat__progress')
 
 
 let hiddenFunc = () => {
@@ -73,3 +74,5 @@ change();
 
 
 console.log(counter)
+
+
