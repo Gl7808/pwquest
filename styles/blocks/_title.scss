@@ -15,17 +15,18 @@
     flex-direction: column;
     gap: 10px;
     font-size: 14px;
+    color: var(--color-light-300);
 
     &-item{
       display: grid;
       gap: 10px;
-      grid-template-columns: 250px 110px 5fr 30px;
+      grid-template-columns: 250px 110px 4fr 30px;
       width: 100%;
 
       &-cord{
         cursor: pointer;
         font-weight: 700;
-        color: var(--color-yellow)
+        color: #ccc58a;
       }
       &-name, &-get, &-description, &-checkbox{
         position: relative;

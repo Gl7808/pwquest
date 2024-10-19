@@ -3,8 +3,14 @@ let total = document.getElementById('total');
 let current = document.getElementById('current');
 let amount = document.getElementsByClassName('myCheckBox')
 let counter = 0;
+let message = document.getElementById('message')
+let message__succsess = document.getElementById('message__succsess')
+let message__value = document.getElementById('message__value')
 
 
+let hiddenFunc = () => {
+    message.style.opacity = '0'
+}
 document.addEventListener('click', function(event) {
     // Проверяем, кликнули ли мы по элементу с классом 'copyDiv'
     if (event.target.classList.contains('title__list-item-cord')) {
@@ -24,6 +30,9 @@ document.addEventListener('click', function(event) {
 
         // Уведомление о том, что текст скопирован
         console.log('Содержимое скопировано: ' + tempInput.value);
+        message.style.opacity = '1';
+        message__value.innerText =  tempInput.value;
+        setTimeout(hiddenFunc, 3000);
     }
 });
 

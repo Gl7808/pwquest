@@ -1,0 +1,13 @@
+.location{
+
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    &-item{
+      padding: 7px;
+      background-color: var(--color-dark-700);
+      border-radius: var(--border-radius-medium);
+    }
+  }
+}

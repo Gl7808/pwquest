@@ -40,3 +40,25 @@ input[type="radio"] {
   font-size: 10px;
   color: var(--color-yellow);
 }
+
+.message{
+  position: fixed;
+  font-size: 12px;
+  left: 0px;
+  bottom: 40vh;
+  opacity: 0;
+
+  &__succsess{
+    padding: 15px;
+    background-color: var(--color-dark-700);
+    border-radius: var(--border-radius-medium);
+    color: var(--color-light-400);
+  }
+
+}
+
+.message__succsess-value{
+  color: #ccc58a;
+  font-weight: 900;
+}
+
