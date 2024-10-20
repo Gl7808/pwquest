@@ -361,6 +361,9 @@ svg * {
   font-weight: 700;
   color: #ccc58a;
 }
+.title__list-item-cord:active {
+  scale: 0.9;
+}
 .title__list-item-name, .title__list-item-get, .title__list-item-description, .title__list-item-checkbox {
   position: relative;
   box-shadow: 0px -1px 1px 1px rgba(87, 87, 87, 0.16);
@@ -443,6 +446,7 @@ input[type=radio] {
   left: 0px;
   bottom: 40vh;
   opacity: 0;
+  display: none;
 }
 .message__succsess {
   padding: 15px;

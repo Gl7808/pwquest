@@ -27,6 +27,10 @@
         cursor: pointer;
         font-weight: 700;
         color: #ccc58a;
+
+        &:active{
+          scale:0.9;
+        }
       }
       &-name, &-get, &-description, &-checkbox{
         position: relative;
