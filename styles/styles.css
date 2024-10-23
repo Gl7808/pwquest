@@ -363,6 +363,7 @@ svg * {
 }
 .title__list-item-cord:active {
   scale: 0.9;
+  color: #f9fdca;
 }
 .title__list-item-name, .title__list-item-get, .title__list-item-description, .title__list-item-checkbox {
   position: relative;
@@ -512,12 +513,21 @@ input[type=radio] {
 .location__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 40px;
 }
 .location__list-item {
-  padding: 7px;
   background-color: var(--color-dark-700);
-  border-radius: var(--border-radius-medium);
+  padding: 15px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 25px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  font-size: 14px;
+}
+.location__list-item input {
+  height: 15px;
+  width: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

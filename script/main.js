@@ -68,11 +68,11 @@ checkboxes.forEach(checkbox => {
 
 let change = () => {
     total.innerText = amount.length;
+
 }
 
 change();
 
 
 console.log(counter)
-
 

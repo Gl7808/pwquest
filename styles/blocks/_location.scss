@@ -3,11 +3,22 @@
   &__list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 40px;
+
     &-item{
-      padding: 7px;
       background-color: var(--color-dark-700);
-      border-radius: var(--border-radius-medium);
+      padding: 15px;
+      display: grid;
+      gap: 5px;
+      grid-template-columns: 25px 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      font-size: 14px;
+
+      input{
+        height: 15px;
+        width: 15px;
+      }
     }
   }
 }
