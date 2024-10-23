@@ -3,6 +3,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 
+
+
+
   &__block{
     display: flex;
     padding: 20px;
@@ -11,11 +14,13 @@
     border-radius: var(--border-radius-medium);
 
 
+
   }
 
   &__list{
     display: flex;
     gap: 5px;
+
     &-item{
       display: flex;
       flex-direction: column;
@@ -34,3 +39,4 @@
     }
   }
 }
+
