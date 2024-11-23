@@ -349,12 +349,23 @@ svg * {
   gap: 10px;
   font-size: 14px;
   color: var(--color-light-300);
+  counter-reset: list-counter;
 }
 .title__list-item {
   display: grid;
   gap: 10px;
   grid-template-columns: 250px 30px 110px 4fr;
   width: 100%;
+  counter-increment: list-counter;
+  position: relative;
+}
+.title__list-item::before {
+  content: counter(list-counter); /* Добавляем номер перед элементом списка */
+  font-weight: bold; /* Делаем номер жирным (по желанию) */
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .title__list-item-cord {
   cursor: pointer;
@@ -426,18 +437,6 @@ svg * {
   width: 8px;
   height: 8px;
   left: -30px;
-}
-
-.easy {
-  background-color: var(--color-green);
-}
-
-.medium {
-  background-color: var(--color-yellow);
-}
-
-.hard {
-  background-color: var(--color-red);
 }
 
 input[type=checkbox],
