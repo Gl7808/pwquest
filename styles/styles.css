@@ -375,9 +375,15 @@ svg * {
   content: counter(list-counter); /* Добавляем номер перед элементом списка */
   font-weight: bold; /* Делаем номер жирным (по желанию) */
   position: absolute;
-  left: -30px;
+  left: -40px;
   top: 50%;
   transform: translateY(-50%);
+  border: 1px solid var(--color-light-400);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
 }
 .title__list-item-cord {
   cursor: pointer;
