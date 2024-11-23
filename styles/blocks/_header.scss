@@ -37,3 +37,15 @@
     }
   }
 }
+
+.resetButton{
+  padding: 5px;
+  color: var(--color-red);
+  background-color: transparent;
+  border: none;
+  right: 20px;
+  cursor: pointer;
+  &:hover{
+    color: var(--color-yellow);
+  }
+}

@@ -76,3 +76,10 @@ change();
 
 console.log(counter)
 
+
+
+document.getElementById('resetButton').addEventListener('click', function() {
+    // Очищаем localStorage
+    localStorage.clear();
+    alert('LocalStorage очищен!');
+});

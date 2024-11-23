@@ -334,6 +334,18 @@ svg * {
   color: var(--color-heisenberg-500);
 }
 
+.resetButton {
+  padding: 5px;
+  color: var(--color-red);
+  background-color: transparent;
+  border: none;
+  right: 20px;
+  cursor: pointer;
+}
+.resetButton:hover {
+  color: var(--color-yellow);
+}
+
 .title {
   display: flex;
   flex-direction: column;
